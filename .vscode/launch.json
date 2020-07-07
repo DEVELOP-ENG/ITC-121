@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DataTypes<ITC-211_9ff0cf0a>",
+            "request": "launch",
+            "mainClass": "DataTypes",
+            "projectName": "ITC-211_9ff0cf0a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DrawShapes<ITC-211_9ff0cf0a>",
+            "request": "launch",
+            "mainClass": "DrawShapes.DrawShapes",
+            "projectName": "ITC-211_9ff0cf0a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Wk1<ITC-211_9ff0cf0a>",
+            "request": "launch",
+            "mainClass": "Homework.Wk1",
+            "projectName": "ITC-211_9ff0cf0a"
+        }
+    ]
+}
