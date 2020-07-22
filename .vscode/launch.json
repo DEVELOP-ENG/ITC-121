@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - rockPS",
+            "request": "launch",
+            "mainClass": "demo.rockPS",
+            "projectName": "ITC-121_46f040a7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - wk3",
+            "request": "launch",
+            "mainClass": "Homework.wk3",
+            "projectName": "ITC-121_46f040a7"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"

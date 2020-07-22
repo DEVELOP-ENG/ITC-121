@@ -6,34 +6,35 @@ import java.util.Random;
 public class wk3 
 { 
 public static void main(String[] args) 
-{ 
+{       
+   System.out.println("Would you like to play Rock, Paper, Scissors?");
+
     String personPlay; //User's play -- "R", "P", or "S" 
     String computerPlay = ""; //Computer's play -- "R", "P", or "S" 
-    int computerInt; //Randomly generated number used to determine 
+    int computerNum; //Randomly generated number used to determine 
                      //computer's play 
-    String response; 
 
 
     Scanner scan = new Scanner(System.in); 
     Random generator = new Random(); 
 
     System.out.println("Hey, let's play Rock, Paper, Scissors!\n" + 
-                       "Please enter a move.\n" + "Rock = R, Paper" + 
+                       "Please enter a move.\n" + "Rock = R, Paper " + 
                        "= P, and Scissors = S.");
 
     System.out.println();
 
     //Generate computer's play (0,1,2) 
-    computerInt = generator.nextInt(3)+1; 
+    computerNum = generator.nextInt(3)+1; 
 
     //Translate computer's randomly generated play to 
     //string using if //statements 
 
-    if (computerInt == 1) 
+    if (computerNum == 1) 
        computerPlay = "R"; 
-    else if (computerInt == 2) 
+    else if (computerNum == 2) 
        computerPlay = "P"; 
-    else if (computerInt == 3) 
+    else if (computerNum == 3) 
        computerPlay = "S"; 
 
 
@@ -70,5 +71,5 @@ public static void main(String[] args)
             System.out.println("Rock breaks scissors. You lose!!"); 
     else 
          System.out.println("Invalid user input."); 
-    }
-}
+      }
+   }
