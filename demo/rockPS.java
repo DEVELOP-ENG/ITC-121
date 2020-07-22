@@ -5,7 +5,6 @@ public class rockPS {
 
 public static void main(String[] args){ 
         
-
     System.out.println("Welcome to the Rock, Paper, Scissors game!\n" +
                         "Please enter one of the values below.\n" +
                         "Scissors\n" + "Paper\n" + "Rock\n" + "END = End Game");
@@ -18,7 +17,8 @@ public static void main(String[] args){
     boolean run = true;
     Scanner scan = new Scanner(System.in); 
     Random random = new Random(); 
-        while (run){
+    //begin of while loop, pinned down where it needed to be
+    while (run){
     //Random Num 
     computerNum = random.nextInt(3)+1; 
 
@@ -72,6 +72,6 @@ public static void main(String[] args){
 
     else if (userChoice.equals("Scissor") && compChoice.equals("Rock"))
         System.out.println("Rock smashes scissor. Rock Wins!"); 
-        }
+        } //made outcomes message choice focused instead of user focused. 
     }
 }
