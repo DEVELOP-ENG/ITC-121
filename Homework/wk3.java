@@ -48,7 +48,7 @@ public class wk3
   
   
       //Outcomes 
-      if (userChoice.equals("END")){
+      if (userChoice.equals("End")){
           System.out.println("You have chose to end the game. Goodbye!");
           run = false;
           System.out.print("Game Has Terminated.");         

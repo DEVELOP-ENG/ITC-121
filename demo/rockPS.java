@@ -24,13 +24,13 @@ public static void main(String[] args){
 
 //while (run){
     if (computerNum == 1) 
-    compChoice = "Rock"; 
+    compChoice = "ROCK"; 
 
     else if (computerNum == 2) 
-    compChoice = "Paper";
+    compChoice = "PAPER";
 
     else if (computerNum == 3) 
-    compChoice = "Scissor"; 
+    compChoice = "SCISSOR"; 
 
 
     //Get input
@@ -51,27 +51,28 @@ public static void main(String[] args){
         run = false;
         System.out.print("Game Has Terminated.");         
     } // placed first so it can Check for End of game first
-
     else if (userChoice.equals(compChoice)) 
-        System.out.println("It's a tie!"); 
+        System.out.println("It's a tie!");  
 
-    else if (userChoice.equals("Rock") && compChoice.equals("Scissor")) 
-        System.out.println("Rock smashes scissors. Rock wins!");
+    else if (userChoice.equals("ROCK") && compChoice.equals("SCISSOR"))
+        System.out.println("Rock smashes scissors. Rock wins!");  
 
-    else if (userChoice.equals("Rock") && compChoice.equals("Paper")) 
-        System.out.println("Paper eats rock. Paper Wins!"); 
+    else if (userChoice.equals("ROCK") && compChoice.equals("PAPER"))
+        System.out.println("Paper eats rock. Paper Wins!");    
 
-    else if (userChoice.equals("Paper") && compChoice.equals("Scissor"))
-        System.out.println("Scissor cuts paper. Scissor Wins!"); 
+    else if (userChoice.equals("PAPER") && compChoice.equals("SCISSOR"))
+        System.out.println("Scissor cuts paper. Scissor Wins!");
 
-    else if (userChoice.equals("Paper") && compChoice.equals("Rock"))
-        System.out.println("Paper covers rock. Paper wins!"); 
+    else if (userChoice.equals("PAPER") && compChoice.equals("ROCK"))
+        System.out.println("Paper covers rock. Paper wins!");   
+
+    else if (userChoice.equals("SCISSOR") && compChoice.equals("PAPER"))
+        System.out.println("Scissor cuts paper. Scissor wins!");
+                 
+    else if (userChoice.equals("SCISSOR") && compChoice.equals("ROCK"))
+        System.out.println("Rock smashes scissor. Rock Wins!");         
     
-    else if (userChoice.equals("Scissor") && compChoice.equals("Paper"))
-        System.out.println("Scissor cuts paper. Scissor wins!"); 
 
-    else if (userChoice.equals("Scissor") && compChoice.equals("Rock"))
-        System.out.println("Rock smashes scissor. Rock Wins!"); 
         } //made outcomes message choice focused instead of user focused. 
     }
 }
