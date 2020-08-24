@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - game",
+            "request": "launch",
+            "mainClass": "MidTerm.game",
+            "projectName": "ITC-121_46f040a7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - rockPS",
             "request": "launch",
             "mainClass": "demo.rockPS",

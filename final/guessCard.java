@@ -1,7 +1,6 @@
-package MidTerm;
 import java.awt.image.BufferedImage;
 
-public class card {
+public class guessCard {
 	private BufferedImage cardImage;
 	private String rank;
 	private int val;
@@ -75,7 +74,7 @@ public class card {
 	}
 
 	//card constructor
-	public card(String rank, String suit, int val, BufferedImage cardImage) {
+	public guessCard(String rank, String suit, int val, BufferedImage cardImage) {
 		this.rank = rank;
 		this.suit = suit;
 		this.val = val;

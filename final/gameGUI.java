@@ -1,5 +1,3 @@
-package MidTerm;
-
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.GridLayout;
@@ -33,8 +31,8 @@ public class gameGUI implements ItemListener, ActionListener {
   private String rankGuess;
   private String combinedGuess;
   private JLabel imgHolder;
-  private card currentCard;
-  private card prev;
+  private guessCard currentCard;
+  private guessCard prev;
   private String prevGuess;
 
 
@@ -56,8 +54,8 @@ public class gameGUI implements ItemListener, ActionListener {
     gameInfo.setEditable(false);
 
     // dropdown lists creation
-    suits = new JComboBox<>(card.Suit.values());
-    ranks = new JComboBox<>(card.Rank.values());  
+    suits = new JComboBox<>(guessCard.Suit.values());
+    ranks = new JComboBox<>(guessCard.Rank.values());  
 
     // dropdown listeners
     suits.addItemListener(this);
@@ -106,10 +104,10 @@ public class gameGUI implements ItemListener, ActionListener {
   // unneeded method, wanted to make sure all cards would work
   private void printEntireDeck() {
     int n = 0;
-    for (card c : deck.deck) {
-      cardImg = new ImageIcon(deck.deck[n].getCardImage());
+    for (guessCard c : guessDeck.deck) {
+      cardImg = new ImageIcon(guessDeck.deck[n].getCardImage());
       gameContainer.add(new JLabel(cardImg));
-      deck.deck[n] = c;
+      guessDeck.deck[n] = c;
       n++;
     }
   }
@@ -119,7 +117,7 @@ public class gameGUI implements ItemListener, ActionListener {
   public void actionPerformed(ActionEvent e) {
     prev = currentCard;
     prevGuess = combinedGuess;
-    currentCard = game.deck.deal();
+    currentCard = guessGame.deck.deal();
 
     if (currentCard == null)
       return;
