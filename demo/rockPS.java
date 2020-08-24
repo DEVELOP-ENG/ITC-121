@@ -7,7 +7,7 @@ public static void main(String[] args){
         
     System.out.println("Welcome to the Rock, Paper, Scissors game!\n" +
                         "Please enter one of the values below.\n" +
-                        "Scissors\n" + "Paper\n" + "Rock\n" + "END = End Game");
+                        "Scissor\n" + "Paper\n" + "Rock\n" + "END = End Game");
 
 
     String userChoice; //User's input R,P,S
@@ -51,6 +51,7 @@ public static void main(String[] args){
         run = false;
         System.out.print("Game Has Terminated.");         
     } // placed first so it can Check for End of game first
+
     else if (userChoice.equals(compChoice)) 
         System.out.println("It's a tie!");  
 
@@ -58,19 +59,19 @@ public static void main(String[] args){
         System.out.println("Rock smashes scissors. Rock wins!");  
 
     else if (userChoice.equals("ROCK") && compChoice.equals("PAPER"))
-        System.out.println("Paper eats rock. Paper Wins!");    
+        System.out.println("Paper eats rock. Paper Wins!\n" + "Please keep playing, or enter 'END' to terminate.");    
 
     else if (userChoice.equals("PAPER") && compChoice.equals("SCISSOR"))
-        System.out.println("Scissor cuts paper. Scissor Wins!");
+        System.out.println("Scissor cuts paper. Scissor Wins!\n" + "Please keep playing, or enter 'END' to terminate.");
 
     else if (userChoice.equals("PAPER") && compChoice.equals("ROCK"))
-        System.out.println("Paper covers rock. Paper wins!");   
+        System.out.println("Paper covers rock. Paper wins!\n" + "Please keep playing, or enter 'END' to terminate.");   
 
     else if (userChoice.equals("SCISSOR") && compChoice.equals("PAPER"))
-        System.out.println("Scissor cuts paper. Scissor wins!");
+        System.out.println("Scissor cuts paper. Scissor wins!\n" + "Please keep playing, or enter 'END' to terminate.");
                  
     else if (userChoice.equals("SCISSOR") && compChoice.equals("ROCK"))
-        System.out.println("Rock smashes scissor. Rock Wins!");         
+        System.out.println("Rock smashes scissor. Rock Wins!\n" + "Please keep playing, or enter 'END' to terminate.");         
     
 
         } //made outcomes message choice focused instead of user focused. 
